@@ -8,12 +8,12 @@ import (
 
 	"github.com/go-rod/rod"
 	"github.com/go-rod/rod/lib/proto"
-	"github.com/luabagg/orcgen/internal"
-	"github.com/luabagg/orcgen/internal/generator"
-	"github.com/luabagg/orcgen/internal/generator/jpeg"
-	"github.com/luabagg/orcgen/internal/generator/pdf"
-	"github.com/luabagg/orcgen/internal/generator/png"
-	"github.com/luabagg/orcgen/pkg/fileinfo"
+	"github.com/lazzytchik/orcgen/internal"
+	"github.com/lazzytchik/orcgen/internal/generator"
+	"github.com/lazzytchik/orcgen/internal/generator/jpeg"
+	"github.com/lazzytchik/orcgen/internal/generator/pdf"
+	"github.com/lazzytchik/orcgen/internal/generator/png"
+	"github.com/lazzytchik/orcgen/pkg/fileinfo"
 	"github.com/stretchr/testify/assert"
 )
 

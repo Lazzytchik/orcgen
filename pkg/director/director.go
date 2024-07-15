@@ -4,10 +4,10 @@ import (
 	"time"
 
 	gorod "github.com/go-rod/rod"
-	"github.com/luabagg/orcgen/internal"
-	"github.com/luabagg/orcgen/internal/generator"
-	"github.com/luabagg/orcgen/internal/rod"
-	"github.com/luabagg/orcgen/pkg/fileinfo"
+	"github.com/lazzytchik/orcgen/internal"
+	"github.com/lazzytchik/orcgen/internal/generator"
+	"github.com/lazzytchik/orcgen/internal/rod"
+	"github.com/lazzytchik/orcgen/pkg/fileinfo"
 )
 
 // Director controls the page conversion methods.

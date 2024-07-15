@@ -1,10 +1,10 @@
 package internal
 
 import (
-	"github.com/luabagg/orcgen/internal/generator"
-	"github.com/luabagg/orcgen/internal/generator/jpeg"
-	"github.com/luabagg/orcgen/internal/generator/pdf"
-	"github.com/luabagg/orcgen/internal/generator/png"
+	"github.com/lazzytchik/orcgen/internal/generator"
+	"github.com/lazzytchik/orcgen/internal/generator/jpeg"
+	"github.com/lazzytchik/orcgen/internal/generator/pdf"
+	"github.com/lazzytchik/orcgen/internal/generator/png"
 )
 
 // Ext enum - valid extension types.

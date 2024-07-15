@@ -1,4 +1,4 @@
-module github.com/luabagg/orcgen
+module github.com/lazzytchik/orcgen
 
 go 1.19
 

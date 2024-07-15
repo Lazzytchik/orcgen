@@ -4,8 +4,8 @@
 package orcgen
 
 import (
-	"github.com/luabagg/orcgen/internal"
-	"github.com/luabagg/orcgen/pkg/director"
+	"github.com/lazzytchik/orcgen/internal"
+	"github.com/lazzytchik/orcgen/pkg/director"
 )
 
 // Valid extension types constants.
