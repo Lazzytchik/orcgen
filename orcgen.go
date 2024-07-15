@@ -5,6 +5,7 @@ package orcgen
 
 import (
 	"github.com/lazzytchik/orcgen/internal"
+	"github.com/lazzytchik/orcgen/internal/rod"
 	"github.com/lazzytchik/orcgen/pkg/director"
 )
 
@@ -28,6 +29,18 @@ const (
 // There are a set of setters for specific config.
 func New(ext internal.Ext) *director.Director {
 	return director.NewDirector(ext).Connect()
+}
+
+// New starts a new Director - the Director contains the available methods for file conversion.
+//
+// ext is the extension to be converted to (use the defined constants above).
+//
+// Connect and Close are used for the Browser connection control.
+// ConvertWebpage and ConvertHTML are used for page conversion.
+//
+// There are a set of setters for specific config.
+func NewCustom(ext internal.Ext, rod *rod.Rod) *director.Director {
+	return director.NewDirectorWithCustomRod(ext, rod).Connect()
 }
 
 // ConvertWebpage converts the url to the ext format, and saves the file.
