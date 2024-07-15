@@ -27,7 +27,7 @@ func NewDirector(ext internal.Ext) *Director {
 	}
 }
 
-// NewDirector opens a new Director instance.
+// NewDirector opens a new Director instance. You may throw in custom rod.Rod struct from go-rod package.
 func NewDirectorWithCustomRod(ext internal.Ext, rod *rod.Rod) *Director {
 	return &Director{
 		generator: internal.Build(ext),
