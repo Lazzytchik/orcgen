@@ -27,11 +27,25 @@ func NewDirector(ext internal.Ext) *Director {
 	}
 }
 
+// Rod is responsible for browsser operations.
+type Rod struct {
+	// Browser is a rod Browser instance.
+	Browser *gorod.Browser
+	// LoadTimeout controlls max page load time before context is canceled.
+	LoadTimeout time.Duration
+	// PageIdleTime sets the wait time after the page stops receiving requests.
+	PageIdleTime time.Duration
+}
+
 // NewDirector opens a new Director instance. You may throw in custom rod.Rod struct from go-rod package.
-func NewDirectorWithCustomRod(ext internal.Ext, rod *rod.Rod) *Director {
+func NewDirectorWithCustomRod(ext internal.Ext, params *Rod) *Director {
 	return &Director{
 		generator: internal.Build(ext),
-		rod:       rod,
+		rod: &rod.Rod{
+			LoadTimeout:  params.LoadTimeout,
+			PageIdleTime: params.PageIdleTime,
+			Browser:      params.Browser,
+		},
 	}
 }
 

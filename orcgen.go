@@ -5,7 +5,6 @@ package orcgen
 
 import (
 	"github.com/lazzytchik/orcgen/internal"
-	"github.com/lazzytchik/orcgen/internal/rod"
 	"github.com/lazzytchik/orcgen/pkg/director"
 )
 
@@ -39,7 +38,7 @@ func New(ext internal.Ext) *director.Director {
 // ConvertWebpage and ConvertHTML are used for page conversion.
 //
 // There are a set of setters for specific config.
-func NewCustom(ext internal.Ext, rod *rod.Rod) *director.Director {
+func NewCustom(ext internal.Ext, rod *director.Rod) *director.Director {
 	return director.NewDirectorWithCustomRod(ext, rod).Connect()
 }
 
