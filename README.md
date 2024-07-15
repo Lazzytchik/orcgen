@@ -13,19 +13,19 @@ Orcgen provides the following functionalities:
 To use Orcgen, you can install it via Go modules:
 
 ```sh
-    go get github.com/luabagg/orcgen
+    go get github.com/lazzytchik/orcgen
 ```
 
 Then you can import it in your Go code:
 
 ```go
-    import "github.com/luabagg/orcgen"
+    import "github.com/lazzytchik/orcgen"
 ```
 
 ## Example Usage
 The package comes with examples that demonstrate the usage of the various functions and features provided by Orcgen.
 
-You can see it in [examples_test.go](https://github.com/luabagg/orcgen/tree/main/examples_test.go) page.
+You can see it in [examples_test.go](https://github.com/lazzytchik/orcgen/tree/main/examples_test.go) page.
 
 ## Contributors
 This project is an open-source project, and contributions from other developers are welcome. If you encounter any issues or have suggestions for improvement, please submit them on the project's GitHub page.
