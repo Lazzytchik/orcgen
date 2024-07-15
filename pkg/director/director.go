@@ -27,6 +27,14 @@ func NewDirector(ext internal.Ext) *Director {
 	}
 }
 
+// NewDirector opens a new Director instance.
+func NewDirectorWithCustomRod(ext internal.Ext, rod *rod.Rod) *Director {
+	return &Director{
+		generator: internal.Build(ext),
+		rod:       rod,
+	}
+}
+
 // Connect starts the Browser connection.
 func (d *Director) Connect() *Director {
 	d.rod.Connect()
