@@ -19,7 +19,7 @@ type Rod struct {
 
 // Connect starts the Browser connection.
 func (r *Rod) Connect() {
-	r.Browser = rod.New().MustConnect()
+	r.Browser = r.Browser.MustConnect()
 }
 
 // Close closes the Browser connection.
